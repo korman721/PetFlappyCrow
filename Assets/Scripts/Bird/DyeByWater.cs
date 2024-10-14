@@ -19,33 +19,21 @@ public class DyeByWater : MonoBehaviour
             {
                 spritesOfImage[0].sprite = spriteOffAir;
             }
-            else
+            else if (Timer <= 6f && Timer > 4f)
             {
-                if (Timer <= 6f && Timer > 4f)
-                {
-                    spritesOfImage[1].sprite = spriteOffAir;
-                }
-                else
-                {
-                    if (Timer <= 4f && Timer > 2f)
-                    {
-                        spritesOfImage[2].sprite = spriteOffAir;
-                    }
-                    else
-                    {
-                        if (Timer <= 2f && Timer > 0.1f)
-                        {
-                            spritesOfImage[3].sprite = spriteOffAir;
-                        }
-                        else
-                        {
-                            if (Timer <= 0.1f)
-                            {
-                                spritesOfImage[4].sprite = spriteOffAir;
-                            }
-                        }
-                    }
-                }
+                spritesOfImage[1].sprite = spriteOffAir;
+            }
+            else if (Timer <= 4f && Timer > 2f)
+            {
+                spritesOfImage[2].sprite = spriteOffAir;
+            }
+            else if (Timer <= 2f && Timer > 0.1f)
+            {
+                spritesOfImage[3].sprite = spriteOffAir;
+            }
+            else if (Timer <= 0.1f)
+            {
+                spritesOfImage[4].sprite = spriteOffAir;
             }
         }
     }
